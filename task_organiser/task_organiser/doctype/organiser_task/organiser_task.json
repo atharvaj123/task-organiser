@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-11-23 20:34:42.734728",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "is_running",
+  "column_break_smjp",
+  "is_completed",
+  "section_break_wvoq",
+  "title",
+  "column_break_tjhj",
+  "priority",
+  "section_break_nlih",
+  "time_spent",
+  "last_started_at",
+  "column_break_iavn",
+  "due_date",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_spent",
+   "fieldtype": "Duration",
+   "label": "Time Spent"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_running",
+   "fieldtype": "Check",
+   "label": "Is Running"
+  },
+  {
+   "fieldname": "last_started_at",
+   "fieldtype": "Datetime",
+   "label": "Last Started at"
+  },
+  {
+   "fieldname": "column_break_iavn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_completed",
+   "fieldtype": "Check",
+   "label": "Is Completed"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_smjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wvoq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tjhj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nlih",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-24 19:28:05.165674",
+ "modified_by": "Administrator",
+ "module": "Task Organiser",
+ "name": "Organiser Task",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
